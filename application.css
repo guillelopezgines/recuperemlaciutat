@@ -47,9 +47,7 @@ h1 {
   max-width: 100%;
   padding-bottom: 56.25%;
   height: auto;
-  border: 6px solid rgba(244, 88, 48, 1);
-  border: 6px solid #04B7B1;
-  border-radius: 30px;
+  border-bottom: 8px solid #04B7B1;
 }
 .video iframe {
   position: absolute;
