@@ -100,7 +100,7 @@ p {
   text-align: center;
 }
 .menu .button {
-  margin: 0 20px;
+  margin: 0 10px;
 }
 .highlighted {
   color: #04B7B1;
@@ -110,10 +110,19 @@ p {
   padding: 60px 20px 20px;
   text-align: center;
 }
+.footer .inner {
+  max-width: 1000px;
+}
 .footer h2 {
   color: #333;
   font-size: 54px;
   margin: 0 0 20px;
+  text-decoration: underline;
+}
+.footer h4 {
+  font-size: 34px;
+  margin: 0 0 30px;
+  text-decoration: underline;
 }
 .footer ul {
   list-style: none;
@@ -122,13 +131,37 @@ p {
 .footer li {
   margin: 0 0 4px;
 }
-.footer li a {
-  color: white;
+.footer li, .footer li a {
+  color: #333;
   text-decoration: none;
   font-size: 30px;
 }
 .footer li a:hover {
   text-decoration: underline;
+}
+.footer ol {
+  list-style-position: inside;
+  margin-bottom: 40px;
+}
+.footer ol.col-3 {
+  column-count: 3;
+  column-gap: 20px;
+}
+.footer ol.col-4 {
+  column-count: 4;
+  column-gap: 10px;
+}
+.footer ol li {
+  margin: 0 0 10px;
+}
+.footer ol li, .footer ol li a {
+  color: #333;
+}
+.footer ol.col-3 li, .footer ol.col-3 li a {
+  font-size: 25px;
+}
+.footer ol.col-4 li, .footer ol.col-4 li a {
+  font-size: 20px;
 }
 .footer img {
   max-width: 80vw;
@@ -139,6 +172,9 @@ p {
   background: #04B7B1;
   text-align: center;
   padding: 50px 20px 30px;
+}
+.bottom .inner {
+  max-width: 1000px;
 }
 .bottom h3{
   display: inline-block;
@@ -197,6 +233,10 @@ p {
     font-size: 34px;
     margin: 0 0 10px;
   }
+  .footer h4 {
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
   .footer ul {
     margin: 0 0 20px;
   }
@@ -205,6 +245,15 @@ p {
   }
   .footer li a {
     font-size: 20px;
+  }
+  .footer ol.col-3 {
+    column-count: auto;
+  }
+  .footer ol.col-4 {
+    column-count: 2;
+  }
+  .footer ol.col-4 li, .footer ol.col-4 li a {
+    font-size: 14px;
   }
   .footer img {
     max-width: 200%;
