@@ -20,7 +20,7 @@ body {
   background: #04B7B1;
 }
 .inner{
-  max-width: 840px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -33,8 +33,6 @@ body {
 }
 .page {
   background: white;
-}
-.page .inner {
 }
 h1 {
   font-size: 80px;
@@ -108,6 +106,9 @@ p {
 .menu .button {
   margin: 0 10px 20px 0;
 }
+.menu .button:last-child {
+  margin-right: 0;
+}
 .highlighted {
   color: #04B7B1;
 }
@@ -178,7 +179,7 @@ p {
 }
 .footer ol {
   list-style-position: inside;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .footer ol.col-3 {
   column-count: 3;
@@ -209,7 +210,7 @@ p {
 .bottom {
   background: #04B7B1;
   text-align: center;
-  padding: 50px 20px 30px;
+  padding: 50px 20px 40px;
 }
 .bottom .inner {
   max-width: 2000px;
