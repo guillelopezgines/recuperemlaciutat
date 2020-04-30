@@ -4,7 +4,6 @@
   <title>Confinem els cotxes, recuperem la ciutat!</title>
   <meta name="description" content="Per primer cop a la història tenim l'oportunitat de viure en una ciutat on es pugui respirar. On ens puguem moure de forma segura caminant i en bici. Amb carrers sense soroll i on els nens i nenes puguin jugar. Una ciutat que cuida el clima i la nostra salut. No deixem que ens la tornin a prendre.">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link href="application.css?v=0" media="all" rel="stylesheet" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <meta property="og:title" content="Confinem els cotxes, recuperem la ciutat!"/>
@@ -13,6 +12,8 @@
   <meta property="og:site_name" content="Confinem els cotxes, recuperem la ciutat!"/>
   <meta property="og:type" content="website"/>
   <meta name="twitter:card" content="summary" />
+  <link href="application.css?v=1" media="all" rel="stylesheet" />
+  <script src="application.js"></script>
 </head>
 <body>
   <div class="banner">
@@ -26,15 +27,24 @@
       <div class="video">
         <iframe src="//www.youtube.com/embed/yPHXSPUGt9A?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
       </div>
-      <p>Per primer cop a la història tenim l'oportunitat de viure en una ciutat on es pugui respirar. On ens puguem moure de forma segura caminant i en bici. Amb carrers sense soroll i on els nens i nenes puguin jugar. Una ciutat que cuida el clima i la nostra salut. No deixem que ens la tornin a prendre.</p>
-      <p><b>Confinem els cotxes, recuperem la ciutat!</b></p>
+      <p>Demanem un pla de desconfinament en què es prioritzin les persones i la mobilitat justa i sostenible envers l'ús del vehicle privat. La contaminació atmosfèrica ens afecta greument la salut i agreuja els efectes de la Covid-19. Volem recuperar la nostra ciutat. Una ciutat saludable i que cuida del nostre clima. <b>Confinem els cotxes, recuperem la ciutat!</b></p>
       <div class="menu">
         <div class="button">
-          <a href="https://drive.google.com/file/d/1TqNhgFhii4FYAwA7u2tBmaAaE53jB8EG/view">Manifest</a>
+          <a href="https://drive.google.com/file/d/1TqNhgFhii4FYAwA7u2tBmaAaE53jB8EG/view">Llegeix el manifest</a>
         </div>
         <div class="button">
           <a href="https://docs.google.com/forms/d/1VOWmgKNI2TN6n9Q9Axr8kkMyBkBaCUEklRn3xWWQlUc/viewform?edit_requested=true">Suma't</a>
         </div>
+        <div class="button">
+          <a data-action="scroll-to" data-destination="adhesions">Adhesions</a>
+        </div>
+        <div class="button">
+          <a data-action="share">Ajuda'ns a difondre</a>
+        </div>
+    </div>
+    <div class="share">
+      <h2>Comparteix la campanya:</h2>
+      <div class="addthis_inline_share_toolbox"></div>
     </div>
   </div>
   <div class="footer">
@@ -50,7 +60,7 @@
     </div>
     <img src="https://static.wixstatic.com/media/41d000_592e774b00fb2127d5383cd4b6081bb1.png/v1/fill/w_1447,h_161,al_c,lg_1,q_85/41d000_592e774b00fb2127d5383cd4b6081bb1.webp">
   </div>
-  <div class="footer bottom">
+  <div class="footer bottom" id="adhesions">
     <div class="inner">
       <h2>Adhesions:</h2>
       <h4>Col.lectius i entitats:</h4>
@@ -164,5 +174,15 @@
       <h3>Moltes gràcies!</h3>
     </div>
   </div>
+  <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5eaad160654700aa"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165033721-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165033721-1');
+  </script>
+
 </body>
 </html>
