@@ -55,6 +55,7 @@ h1 {
   padding: 40px 0 30px;
   display: block;
   margin: 0 auto;
+  color: black;
 }
 h2 {
   color: #333;
@@ -153,10 +154,14 @@ p {
 .footer .inner {
   max-width: 1000px;
 }
+.footer h2 {
+  color: black;
+}
 .footer h4 {
   font-size: 34px;
   margin: 0 0 30px;
   text-decoration: underline;
+  color: #222;
 }
 .footer .logos a {
   text-decoration: none;
@@ -233,6 +238,7 @@ p {
 .bottom h3{
   display: inline-block;
   font-size: 77px;
+  color: black;
 }
 @media (max-width: 940px) {
   body {
