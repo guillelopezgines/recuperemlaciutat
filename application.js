@@ -11,14 +11,16 @@ $(document).ready(function() {
       $entitats.empty();
       $individuals.empty();
 
+      window.data = data;
+
       // fill
       for(var i = 0; i<data.length; i++) {
         var row = data[i],
             name = row[1];
         if(row[0] == 'Persona individual') {
-          $individuals.append("<li>" + name + "</li>")
+          // $individuals.append("<li>" + name + "</li>")
         } else {
-          $entitats.append("<li>" + name + "</li>")
+          // $entitats.append("<li>" + name + "</li>")
         }
       }
     }   
