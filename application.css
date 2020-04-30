@@ -131,7 +131,7 @@ p {
 }
 .footer {
   background: #67CFCB;
-  padding: 60px 20px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 .footer .inner {
@@ -141,6 +141,23 @@ p {
   font-size: 34px;
   margin: 0 0 30px;
   text-decoration: underline;
+}
+.footer .logos a {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer .logos img {
+  height: 80px;
+  display: inline-block;
+  margin: 20px;
+  filter: grayscale(70%);
+}
+.footer .logos img.big {
+  height: 100px;
+}
+.footer .logos img.small {
+  height: 60px;
 }
 .footer ul {
   list-style: none;
@@ -195,7 +212,7 @@ p {
   padding: 50px 20px 30px;
 }
 .bottom .inner {
-  max-width: 1000px;
+  max-width: 2000px;
 }
 .bottom h3{
   display: inline-block;
@@ -239,16 +256,9 @@ p {
     padding-right: 10px;
     max-width: 600px;
   }
-  .menu .button {
-    /*margin: 20px 0;*/
-    /*width: 100%;
-    display: block;*/
-  }
   .button a{
     padding: 10px 20px 6px;
     font-size: 30px;
-    /*max-width: 490px;*/
-    /*width: 100%;*/
   }
   .share {
   }
@@ -264,6 +274,16 @@ p {
     font-size: 24px;
     margin: 0 0 20px;
   }
+  .footer .logos img {
+    height: 60px;
+    margin: 10px;
+  }
+  .footer .logos img.big{
+    height: 80px;
+  }
+  .footer .logos img.small{
+    height: 40px;
+  }
   .footer ul {
     margin: 0 0 20px;
   }
@@ -274,15 +294,15 @@ p {
     font-size: 20px;
   }
   .footer ol.col-3 {
-    column-count: auto;
+    column-count: 2;
   }
   .footer ol.col-4 {
-    column-count: 2;
+    column-count: 3;
   }
   .footer ol.col-4 li, .footer ol.col-4 li a {
     font-size: 14px;
   }
-  .footer img {
+  .footer img.hands {
     max-width: 200%;
     position: relative;
     left: -50%;
@@ -301,5 +321,21 @@ p {
   .button a {
     font-size: 26px;
     padding: 14px 20px 8px;
+  }
+  .footer ol.col-3 {
+    column-count: auto;
+  }
+  .footer ol.col-4 {
+    column-count: 2;
+  }
+  .footer .logos img {
+    height: 40px;
+    margin: 10px;
+  }
+  .footer .logos img.big{
+    height: 60px;
+  }
+  .footer .logos img.small{
+    height: 30px;
   }
 }

@@ -8,8 +8,8 @@ $(document).ready(function() {
           $individuals = $('#individuals');
 
       // clear
-      $entitats.empty();
-      $individuals.empty();
+      // $entitats.empty();
+      // $individuals.empty();
 
       window.data = data;
 
@@ -42,7 +42,8 @@ $(document).ready(function() {
     e.preventDefault();
     var $share = $('.share');
     $share.slideToggle();
-    if($share.outerHeight() == 0) {
+    $share.toggleClass('active');
+    if($share.hasClass('active')) {
       var destination = $share.offset().top - $(window).height()/2 - $share.outerHeight()/2;
       if(window.scrollY < destination) {
         $('body,html').animate({
