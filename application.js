@@ -8,8 +8,8 @@ $(document).ready(function() {
           $individuals = $('#individuals');
 
       // clear
-      // $entitats.empty();
-      // $individuals.empty();
+      $entitats.empty();
+      $individuals.empty();
 
       window.data = data;
 
@@ -18,9 +18,9 @@ $(document).ready(function() {
         var row = data[i],
             name = row[1];
         if(row[0] == 'Persona individual') {
-          // $individuals.append("<li>" + name + "</li>")
+          $individuals.append("<li>" + name + "</li>")
         } else {
-          // $entitats.append("<li>" + name + "</li>")
+          $entitats.append("<li>" + name + "</li>")
         }
       }
     }   
