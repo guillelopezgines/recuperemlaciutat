@@ -2,7 +2,6 @@
   font-family: "MuseoW01-700";
   src: url("fonts/museow01-700.woff") format("woff");
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -145,10 +144,43 @@ p {
   font-size: 18px !important;
   font-weight: bold !important;
 }
+.drawings .inner {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.drawings .drawing {
+  height: 350px;
+  border-bottom: 8px solid #04B7B1;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.drawings .drawing img, 
+.drawings .drawing video {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.drawings .drawing p {
+  display: block;
+  max-width: 100%;
+  margin: 10px 0 0;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+.drawings .drawing p a {
+  color: black;
+}
 .footer {
   background: #67CFCB;
   padding: 60px 20px;
   text-align: center;
+  width: 100%;
+  overflow: hidden;
 }
 .footer .inner {
   max-width: 1000px;
@@ -199,6 +231,8 @@ p {
 .footer ol {
   list-style-position: inside;
   margin-bottom: 50px;
+  width: 100%;
+  overflow: hidden;
 }
 .footer ol.col-3 {
   column-count: 3;
@@ -286,6 +320,10 @@ p {
   .share h2 {
     margin: 0 0 20px;
   }
+  .drawings .drawing {
+    height: 250px;
+    margin-bottom: 40px;
+  }
   .footer {
     width: 100%;
     overflow: hidden;
@@ -336,6 +374,37 @@ p {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 750px) {
+  .drawings .inner {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .drawings .drawing {
+    height: auto;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto 15px;
+    padding: 0 10px;
+    border: 0;
+  }
+  .drawings .drawing img,
+  .drawings .drawing video {
+    height: auto;
+    width: 100%;
+  }
+  .drawings .drawing p {
+    margin-top: 0px;
+  }
+  .footer.bottom {
+    text-align: left;
+  }
+  .footer h4 {
+    margin: 0 0 10px;
+  }
+  .footer ol.col-3 li, .footer ol.col-3 li a{
+    font-size: 20px ;
+  }
+}
 @media (max-width: 590px) {
   .menu{
     max-width: 500px;
@@ -348,7 +417,10 @@ p {
     column-count: auto;
   }
   .footer ol.col-4 {
-    column-count: 2;
+    column-count: 1;
+  }
+  .footer ol li{
+    font-size: 16px !important;
   }
   .footer .logos img {
     height: 40px;

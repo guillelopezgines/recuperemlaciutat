@@ -25,7 +25,6 @@ $(document).ready(function() {
       }
     }   
   });
-
   $('[data-action=scroll-to][data-destination]').on('click', function(e){
     e.preventDefault();
     var destionationId = $(this).data('destination'),
