@@ -128,21 +128,43 @@ p {
 }
 .share {
   text-align: center;
-  padding-bottom: 30px;
   display: none;
 }
-.share .addthis_inline_share_toolbox {
+.share .networks{
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 0px;
 }
-.share .at-share-tbx-element .at-share-btn {
-  padding: 5px 7px;
-  margin: 0 4px 10px;
+.share a.network {
+  width: 150px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 6px;
+  background: silver;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px 2px;
+  color: white;
+  display: inline-block;
 }
-.share .at-share-tbx-element .at-share-btn .at-label{
-  font-family: "Open Sans", sans-serif !important;
-  font-size: 18px !important;
-  font-weight: bold !important;
+.share a.network.whatsapp { background: rgb(77, 194, 71);}
+.share a.network.facebook { background: rgb(59, 89, 152);}
+.share a.network.twitter { background: rgb(29, 161, 242);}
+.share a.network.telegram { background: rgb(0, 136, 204);}
+.share a.network.pinterest { background: rgb(203, 32, 39);}
+.share a.network.email { background: rgb(132, 132, 132);}
+.share a.network .icon {
+  height: 20px; 
+  display: inline-block;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+.share p.extra {
+  text-align: center;
+  max-width: 800px;
+}
+.share p.extra a {
+  color: #04B7B1;
+  font-weight: bold;
 }
 .drawings .inner {
   max-width: 1000px;
@@ -211,28 +233,12 @@ p {
 .footer .logos img.small {
   height: 60px;
 }
-.footer ul {
-  list-style: none;
-  margin: 0 0 40px;
-}
-.footer ul li {
-  margin: 0 0 8px;
-}
-.footer ul li, .footer ul li a {
-  font-family: "Open Sans", sans-serif;
-  color: #333;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: bold;
-}
-.footer li a:hover {
-  text-decoration: underline;
-}
 .footer ol {
   list-style-position: inside;
   margin-bottom: 50px;
   width: 100%;
   overflow: hidden;
+  text-align: left;
 }
 .footer ol.col-3 {
   column-count: 3;
@@ -245,15 +251,15 @@ p {
 .footer ol li {
   margin: 0 0 10px;
 }
-.footer ol li, .footer ol li a {
+.footer ol li {
   color: #333;
   font-family: "Open Sans", sans-serif;
 }
 .footer ol.col-3 li, .footer ol.col-3 li a {
-  font-size: 25px;
+  font-size: 20px;
 }
 .footer ol.col-4 li, .footer ol.col-4 li a {
-  font-size: 20px;
+  font-size: 18px;
 }
 .footer img {
   max-width: 80vw;
@@ -315,10 +321,11 @@ p {
     padding: 10px 20px 6px;
     font-size: 30px;
   }
-  .share {
-  }
   .share h2 {
     margin: 0 0 20px;
+  }
+  .share p.extra {
+    max-width: 600px;
   }
   .drawings .drawing {
     height: 250px;
@@ -343,28 +350,11 @@ p {
   .footer .logos img.small{
     height: 40px;
   }
-  .footer ul {
-    margin: 0 0 20px;
+  .footer ol.col-3 li {
+    font-size: 16px;
   }
-  .footer li {
-    margin: 0 0 10px;
-  }
-  .footer li a {
-    font-size: 20px;
-  }
-  .footer ol.col-3 {
-    column-count: 2;
-  }
-  .footer ol.col-4 {
-    column-count: 3;
-  }
-  .footer ol.col-4 li, .footer ol.col-4 li a {
+  .footer ol.col-4 li {
     font-size: 14px;
-  }
-  .footer img.hands {
-    max-width: 200%;
-    position: relative;
-    left: -50%;
   }
   .bottom {
     padding: 40px 10px 20px;
@@ -401,8 +391,14 @@ p {
   .footer h4 {
     margin: 0 0 10px;
   }
-  .footer ol.col-3 li, .footer ol.col-3 li a{
-    font-size: 20px ;
+  .footer ol {
+    margin-bottom: 20px;
+  }
+  .footer ol.col-3 {
+    column-count: 2;
+  }
+  .footer ol.col-4 {
+    column-count: 3;
   }
 }
 @media (max-width: 590px) {
@@ -413,15 +409,6 @@ p {
     font-size: 26px;
     padding: 14px 20px 8px;
   }
-  .footer ol.col-3 {
-    column-count: auto;
-  }
-  .footer ol.col-4 {
-    column-count: 1;
-  }
-  .footer ol li{
-    font-size: 16px !important;
-  }
   .footer .logos img {
     height: 40px;
     margin: 10px;
@@ -431,5 +418,16 @@ p {
   }
   .footer .logos img.small{
     height: 30px;
+  }
+}
+@media (max-width: 490px) {
+  .footer ol.col-3 {
+    column-count: auto;
+  }
+  .footer ol.col-4 {
+    column-count: 1;
+  }
+  .footer ol li{
+    font-size: 16px !important;
   }
 }

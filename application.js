@@ -44,6 +44,7 @@ $(document).ready(function() {
     $share.toggleClass('active');
     if($share.hasClass('active')) {
       var destination = $share.offset().top - $(window).height()/2 - $share.outerHeight()/2;
+      var destination = $share.offset().top - 100;
       if(window.scrollY < destination) {
         $('body,html').animate({
           scrollTop: destination
