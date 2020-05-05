@@ -230,6 +230,9 @@ p {
 .footer .logos img.big {
   height: 100px;
 }
+.footer .logos img.very-big {
+  height: 120px;
+}
 .footer .logos img.small {
   height: 60px;
 }
@@ -344,6 +347,9 @@ p {
     height: 60px;
     margin: 10px;
   }
+  .footer .logos img.very-big{
+    height: 90px;
+  }
   .footer .logos img.big{
     height: 80px;
   }
@@ -412,6 +418,9 @@ p {
   .footer .logos img {
     height: 40px;
     margin: 10px;
+  }
+  .footer .logos img.very-big{
+    height: 70px;
   }
   .footer .logos img.big{
     height: 60px;
