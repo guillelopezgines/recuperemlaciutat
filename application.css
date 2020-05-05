@@ -225,7 +225,7 @@ p {
   height: 80px;
   display: inline-block;
   margin: 20px;
-  filter: grayscale(70%);
+  filter: grayscale(100%);
 }
 .footer .logos img.big {
   height: 100px;
