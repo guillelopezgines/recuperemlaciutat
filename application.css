@@ -8,6 +8,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  outline:0;
 }
 html {
   color: #000;
@@ -175,7 +176,7 @@ p {
   justify-content: center;
 }
 .drawings .more {
-  margin: 40px auto;
+  margin: 20px auto 10px;
   text-align: center;
 }
 .drawings .hidden {
