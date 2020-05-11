@@ -62,6 +62,9 @@ h2 {
   margin: 0 0 20px;
   text-decoration: underline;
 }
+video {
+  max-width: 100%;
+}
 .video {
   position: relative;
   overflow: hidden;
