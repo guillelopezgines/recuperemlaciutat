@@ -175,6 +175,10 @@ p {
   flex-wrap: wrap;
   justify-content: center;
 }
+.drawings .break {
+  flex-basis: 100%;
+  height: 0;
+}
 .drawings .more {
   margin: 20px auto 10px;
   text-align: center;
