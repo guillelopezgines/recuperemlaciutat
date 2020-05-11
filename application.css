@@ -349,6 +349,9 @@ p {
     height: 250px;
     margin-bottom: 40px;
   }
+  .drawings .more {
+    margin: 0 auto 30px;
+  }
   .footer {
     width: 100%;
     overflow: hidden;
