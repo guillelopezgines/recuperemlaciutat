@@ -54,4 +54,9 @@ $(document).ready(function() {
       }
     }
   });
+  $('[data-action=more-drawings]').on('click', function(e){
+    e.preventDefault();
+    $('.drawings .hidden').toggle();
+    $(this).parents('.more').remove()
+  });
 });
