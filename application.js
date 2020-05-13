@@ -5,7 +5,10 @@ $(document).ready(function() {
     success: function(response){
       var data = $.csv.toArrays(response),
           $entitats = $('#entitats'),
-          $individuals = $('#individuals');
+          $individuals = $('#individuals'),
+          entities_count = 0,
+          people_count = 0,
+          goal_count = 0;
 
       // clear
       $entitats.empty();
@@ -18,11 +21,33 @@ $(document).ready(function() {
         var row = data[i],
             name = row[1];
         if(row[0] == 'Persona individual') {
+          people_count++;
           $individuals.append("<li>" + name + "</li>")
         } else {
+          entities_count++;
           $entitats.append("<li>" + name + "</li>")
         }
       }
+
+      goal_count = 5000;
+      if(people_count > goal_count) goal_count = 7500;
+      if(people_count > goal_count) goal_count = 10000;
+      if(people_count > goal_count) goal_count = 15000;
+      if(people_count > goal_count) goal_count = 20000;
+      if(people_count > goal_count) goal_count = 25000;
+      if(people_count > goal_count) goal_count = 50000;
+      if(people_count > goal_count) goal_count = 75000;
+      if(people_count > goal_count) goal_count = 100000;
+
+      var formatNumber = function (x) {
+          return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+      }
+
+      $('#entities-count').html(formatNumber(entities_count));
+      $('#people-count').html(formatNumber(people_count));
+      $('#goal-count').html(formatNumber(goal_count));
+      $('.progress').show();
+      $('.progress .bar').css('width', (100 * people_count/goal_count) + '%')
     }   
   });
   $('[data-action=scroll-to][data-destination]').on('click', function(e){

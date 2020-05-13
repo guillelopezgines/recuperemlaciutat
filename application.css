@@ -55,6 +55,7 @@ h1 {
   display: block;
   margin: 0 auto;
   color: black;
+  position: relative;
 }
 h2 {
   color: #333;
@@ -64,6 +65,7 @@ h2 {
 }
 video {
   max-width: 100%;
+  position: relative;
 }
 .video {
   position: relative;
@@ -88,6 +90,27 @@ p {
   line-height: 40px;
   color: black;
   margin: 20px auto;
+}
+.progress {
+  margin: 30px auto;
+}
+.progress p {
+  margin: 0 0 10px;
+}
+.progress .frame {
+  background: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 90%;
+  display: inline-block;
+}
+.progress .bar {
+  height: 100%;
+  background: linear-gradient(to right, #FFA600, #ec2c22);
+  width: 0%;
+  transition: all 1s ease-out 0s;
+  transition-delay: 1s;
 }
 .button {
   display: inline-block;
