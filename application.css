@@ -273,7 +273,10 @@ p {
   color: #333;
   font-family: "Open Sans", sans-serif;
 }
-.footer ol.col-3 li, .footer ol.col-3 li a {
+.footer ol#individuals li {
+  text-transform: capitalize;
+}
+.footer ol.col-3 li{
   font-size: 20px;
 }
 .footer ol.col-4 li, .footer ol.col-4 li a {
