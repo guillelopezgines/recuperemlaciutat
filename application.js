@@ -1,4 +1,4 @@
-$(document).ready(function() {
+var reload = function(){
   $.get({
     url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQiCUlLoI5grAcifORhhWirGLoaFA7t9v024l3V4MMhoC7XHvMLSNWZs2-1IPOIil1Wxgzm0J8kjCpi/pub?gid=2065355145&single=true&output=csv&cache=" + Date.now(),
     dataType: "text",
@@ -13,8 +13,6 @@ $(document).ready(function() {
       // clear
       $entitats.empty();
       $individuals.empty();
-
-      window.data = data;
 
       // fill
       for(var i = 0; i<data.length; i++) {
@@ -50,6 +48,14 @@ $(document).ready(function() {
       $('.progress .bar').css('width', (100 * people_count/goal_count) + '%')
     }   
   });
+};
+
+$(document).ready(function() {
+  reload();
+  setInterval(function(){
+    reload();
+  }, 60 * 1000);
+
   $('[data-action=scroll-to][data-destination]').on('click', function(e){
     e.preventDefault();
     var destionationId = $(this).data('destination'),
