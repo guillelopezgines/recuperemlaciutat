@@ -183,7 +183,7 @@ p {
   height: 0;
 }
 .drawings .more {
-  margin: 20px auto 10px;
+  margin: 30px auto 10px;
   text-align: center;
 }
 .drawings .hidden {
@@ -191,9 +191,9 @@ p {
 }
 .drawings .drawing {
   height: 320px;
-  /*border-bottom: 8px solid #04B7B1;*/
   margin: 10px;
   text-align: center;
+  padding-bottom: 10px;
 }
 .drawings .drawing img, 
 .drawings .drawing video {
@@ -204,8 +204,9 @@ p {
 .drawings .drawing p {
   display: block;
   max-width: 100%;
-  margin: 4px 0 0;
+  margin: 2px 0 0;
   font-size: 12px;
+  line-height: normal;
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
@@ -410,7 +411,7 @@ p {
     width: 100%;
   }
   .drawings .drawing p {
-    margin-top: 0px;
+    margin-top: 10px;
   }
   .footer.bottom {
     text-align: left;
