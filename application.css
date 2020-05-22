@@ -45,6 +45,14 @@ body {
   line-height: 23px;
   padding: 20px 0 18px;
 }
+.banner .lang {
+  float: right;
+}
+.banner .lang a {
+  color: white;
+  font-size: 20px;
+  padding: 0 5px;
+}
 .page {
   background: white;
 }
