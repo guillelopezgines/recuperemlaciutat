@@ -478,11 +478,11 @@ p {
 }
 @media (max-width: 590px) {
   h1 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 40px;
   }
   h1.large {
-    font-size: 34px;
+    font-size: 30px;
   }
   .menu{
     max-width: 500px;
