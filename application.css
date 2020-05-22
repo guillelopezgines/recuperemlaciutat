@@ -484,6 +484,9 @@ p {
   h1.large {
     font-size: 30px;
   }
+  h1.small {
+    font-size: 26px;
+  }
   .menu{
     max-width: 500px;
   }
