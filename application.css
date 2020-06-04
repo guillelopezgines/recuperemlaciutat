@@ -254,9 +254,10 @@ p {
   color: black;
 }
 .news .inner {
-  max-width: 700px;
   text-align: center;
-  padding: 50px 0;
+  margin: 50px auto;
+  max-width: 1400px;
+  overflow: hidden;
 }
 .new {
   text-align: center;
@@ -264,11 +265,38 @@ p {
 .new h3 {
  color: #333;
  font-size: 34px;
- text-decoration: underline; 
+ text-decoration: underline;
+ max-width: 700px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 20px;
 }
 .new p {
   text-align: center;
   margin-top: 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.new .poster {
+  max-width: 300px;
+  display: inline-block;
+  padding: 20px;  
+}
+.new .poster h4{
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+.new .poster a.image{
+  display: block;
+  margin-bottom: 10px;
+}
+.new .poster a.download{
+  color: inherit;
+  font-size: 20px;
+}
+.new .poster img {
+  width: 100%;
 }
 .new .menu{
   text-align: center;
@@ -520,6 +548,15 @@ p {
   .button a {
     font-size: 26px;
     padding: 14px 20px 8px;
+  }
+  .new h3 {
+   font-size: 30px;
+  }
+  .new .poster {
+    display: block;
+    max-width: 100%;
+    padding: 0px;
+    margin-bottom: 20px;
   }
   .footer .logos img {
     height: 40px;
