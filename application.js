@@ -1,6 +1,6 @@
 var reload = function(){
   $.get({
-    url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQiCUlLoI5grAcifORhhWirGLoaFA7t9v024l3V4MMhoC7XHvMLSNWZs2-1IPOIil1Wxgzm0J8kjCpi/pub?gid=2065355145&single=true&output=csv&cache=" + Date.now(),
+    url: "https://cors-anywhere.herokuapp.com/docs.google.com/spreadsheets/d/e/2PACX-1vQiCUlLoI5grAcifORhhWirGLoaFA7t9v024l3V4MMhoC7XHvMLSNWZs2-1IPOIil1Wxgzm0J8kjCpi/pub?gid=2065355145&single=true&output=csv&cache=" + Date.now(),
     dataType: "text",
     success: function(response){
       var data = $.csv.toArrays(response),
